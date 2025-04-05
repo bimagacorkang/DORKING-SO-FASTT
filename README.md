@@ -3,6 +3,9 @@ DORK SO FASTT, DI BUAT UNTUK MEMUDAHKAN PENGGUNA ATAU HACKER UNTUK MENCARI WEB V
 
 
 CARA PENGGUNAAANYA
-*==========================================*
+*=======================================*
 $ pip install colorama google
-$ git clone
+
+$ git clone git@github.com:bimagacorkang/DORKING-SO-FASTT.git
+
+$ cd dork
