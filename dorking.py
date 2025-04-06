@@ -18,7 +18,7 @@ def banner():
 ╚═════╝ ╚═╝╚═╝     ╚═╝╚═╝  ╚═╝   ╚═╝   ╚══════╝   ╚═╝   
 """)
     print(Fore.YELLOW + "="*60)
-    print(Fore.GREEN + "Dorking Soo Fastt🥵💥 | v2.0")
+    print(Fore.GREEN + "Pemindai Dork Canggih | v2.0")
     print(Fore.GREEN + "Dibuat oleh BimaTzy999")
     print(Fore.GREEN + "Penulis Qxyura404")
     print(Fore.YELLOW + "="*60 + Style.RESET_ALL)
@@ -35,7 +35,7 @@ def main():
     banner()
     
     # Input dork dari pengguna
-    dork = input(Fore.MAGENTA + "\n[?] Masukkan dork Anda (contoh: 'inurl:admin site:my.id'): " + Style.RESET_ALL)
+    dork = input(Fore.MAGENTA + "\n[?] Masukkan dork Anda (contoh: 'site:go.id phpmyadmin'): " + Style.RESET_ALL)
     max_hasil = int(input(Fore.MAGENTA + "[?] Masukkan jumlah maksimal hasil (default 30): " + Style.RESET_ALL) or 30)
     delay = float(input(Fore.MAGENTA + "[?] Masukkan jeda antara permintaan (detik, min 2): " + Style.RESET_ALL) or 2)
     
@@ -55,7 +55,8 @@ def main():
         counter = 1
         
         print(Fore.WHITE + "-"*80)
-        for result in search(dork, num=max_hasil, sleep_interval=delay):
+        # PERBAIKAN DI SINI: ganti sleep_interval menjadi pause
+        for result in search(dork, num=max_hasil, pause=delay):
             print(Fore.GREEN + f"[{counter}] " + Fore.CYAN + result)
             counter += 1
         print(Fore.WHITE + "-"*80)
@@ -65,6 +66,8 @@ def main():
         print(Fore.YELLOW + f"[+] Total hasil ditemukan: {counter-1}")
         print(Fore.CYAN + "\n[+] Ikuti untuk tools lainnya!" + Style.RESET_ALL)
         
+    except ImportError:
+        print(Fore.RED + "\n[!] Error: Library 'googlesearch-python' tidak ditemukan. Install dengan: pip install googlesearch-python")
     except Exception as e:
         print(Fore.RED + f"\n[!] Error: {e}")
     finally:
