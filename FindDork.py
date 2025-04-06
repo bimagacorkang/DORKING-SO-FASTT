@@ -18,9 +18,9 @@ def banner():
 ╚═════╝ ╚═╝╚═╝     ╚═╝╚═╝  ╚═╝   ╚═╝   ╚══════╝   ╚═╝   
 """)
     print(Fore.YELLOW + "="*60)
-    print(Fore.GREEN + "Find Dorking So Fastt🥵 | v1.9")
-    print(Fore.GREEN + "Create  by BimaTzy999")
-    print(Fore.GREEN + "Thanks for Qxyura404")
+    print(Fore.GREEN + "Dorking Soo Fastt🥵💥 | v2.0")
+    print(Fore.GREEN + "Dibuat oleh BimaTzy999")
+    print(Fore.GREEN + "Penulis Qxyura404")
     print(Fore.YELLOW + "="*60 + Style.RESET_ALL)
 
 def animasi_loading():
@@ -35,7 +35,7 @@ def main():
     banner()
     
     # Input dork dari pengguna
-    dork = input(Fore.MAGENTA + "\n[?] Masukkan dork Anda (contoh: inurl:/admin/login site:co.id): " + Style.RESET_ALL)
+    dork = input(Fore.MAGENTA + "\n[?] Masukkan dork Anda (contoh: 'site:go.id phpmyadmin'): " + Style.RESET_ALL)
     max_hasil = int(input(Fore.MAGENTA + "[?] Masukkan jumlah maksimal hasil (default 30): " + Style.RESET_ALL) or 30)
     delay = float(input(Fore.MAGENTA + "[?] Masukkan jeda antara permintaan (detik, min 2): " + Style.RESET_ALL) or 2)
     
@@ -55,7 +55,7 @@ def main():
         counter = 1
         
         print(Fore.WHITE + "-"*80)
-        for result in search(dork, num_results=max_hasil, sleep_interval=delay):
+        for result in search(dork, num=max_hasil, sleep_interval=delay):
             print(Fore.GREEN + f"[{counter}] " + Fore.CYAN + result)
             counter += 1
         print(Fore.WHITE + "-"*80)
@@ -69,7 +69,6 @@ def main():
         print(Fore.RED + f"\n[!] Error: {e}")
     finally:
         print(Fore.YELLOW + "\n[+] Sesi berakhir" + Style.RESET_ALL)
-        print(Fore.YELLOW + "\n[+] Jangan Lupa Follow ig:BIOMI.VILLAIN" + Style. RESET_ALL) 
 
 if __name__ == "__main__":
     main()
