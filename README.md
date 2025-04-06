@@ -6,6 +6,6 @@ CARA PENGGUNAAANYA
 *=====================================*
 $ pip install colorama google
 
-$ git clone git@github.com:bimagacorkang/DORKING-SO-FASTT.git
+$ git clone https://github.com/bimagacorkang/DORKING-SO-FASTT.git
 
 $ python FindDork.py
