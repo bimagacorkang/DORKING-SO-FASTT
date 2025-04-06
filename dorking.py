@@ -35,7 +35,7 @@ def main():
     banner()
     
     # Input dork dari pengguna
-    dork = input(Fore.MAGENTA + "\n[?] Masukkan dork Anda (contoh: 'site:go.id phpmyadmin'): " + Style.RESET_ALL)
+    dork = input(Fore.MAGENTA + "\n[?] Masukkan dork Anda (contoh: 'inurl:admin site:my.id'): " + Style.RESET_ALL)
     max_hasil = int(input(Fore.MAGENTA + "[?] Masukkan jumlah maksimal hasil (default 30): " + Style.RESET_ALL) or 30)
     delay = float(input(Fore.MAGENTA + "[?] Masukkan jeda antara permintaan (detik, min 2): " + Style.RESET_ALL) or 2)
     
