@@ -18,7 +18,7 @@ def banner():
 ╚═════╝ ╚═╝╚═╝     ╚═╝╚═╝  ╚═╝   ╚═╝   ╚══════╝   ╚═╝   
 """)
     print(Fore.YELLOW + "="*60)
-    print(Fore.GREEN + "Pemindai Dork Canggih | v2.0")
+    print(Fore.GREEN + "Dorking So Fastt🥵🥵 | v2.0")
     print(Fore.GREEN + "Dibuat oleh BimaTzy999")
     print(Fore.GREEN + "Penulis Qxyura404")
     print(Fore.YELLOW + "="*60 + Style.RESET_ALL)
@@ -35,7 +35,7 @@ def main():
     banner()
     
     # Input dork dari pengguna
-    dork = input(Fore.MAGENTA + "\n[?] Masukkan dork Anda (contoh: 'site:go.id phpmyadmin'): " + Style.RESET_ALL)
+    dork = input(Fore.MAGENTA + "\n[?] Masukkan dork Anda: " + Style.RESET_ALL)
     max_hasil = int(input(Fore.MAGENTA + "[?] Masukkan jumlah maksimal hasil (default 30): " + Style.RESET_ALL) or 30)
     delay = float(input(Fore.MAGENTA + "[?] Masukkan jeda antara permintaan (detik, min 2): " + Style.RESET_ALL) or 2)
     
