@@ -8,4 +8,4 @@ $ pip install colorama google
 
 $ git clone https://github.com/bimagacorkang/DORKING-SO-FASTT.git
 
-$ python FindDork.py
+$ python DORKING-fast.py
